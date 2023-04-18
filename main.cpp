@@ -2,6 +2,16 @@
 
 const char kWindowTitle[] = "GC2B_03_キムラコタロウ_MT3";
 
+struct Vector3 {
+	float x, y, z;
+};
+
+Vector3 Add(const Vector3& v1, const Vector3& v2) {
+	Vector3 result;
+	result.x = v1.x + v2.x;
+	result.y=v1.y+v2.y;
+}
+
 // Windowsアプリでのエントリーポイント(main関数)
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
